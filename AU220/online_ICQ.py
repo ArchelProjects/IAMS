@@ -61,11 +61,6 @@ try:
         print(f"Found audit link: {audit_link.text}")
         audit_link.click()
 
-        # Detail Page
-        # wait(driver, 10).until(EC.url_contains("http://10.10.99.18:8002/icq/47"))
-        #wait(driver, 20).until(EC.presence_of_element_located((By.ID, "aud_title")))
-        #print("Navigated to audit detail page")
-
     except Exception as section_error:
         print("UI verification failed:", section_error)
 
